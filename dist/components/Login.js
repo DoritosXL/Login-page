@@ -20,7 +20,7 @@ const Login = (_ref) => {
     Header,
     subText
   } = _ref;
-  const templateImage = "https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg";
+  const templateImage = "https://source.unsplash.com/collection/496416";
   const backgroundImageCSS = {
     position: "absolute",
     width: "100%",
@@ -29,12 +29,25 @@ const Login = (_ref) => {
     WebkitBackgroundSize: "cover",
     backgroundSize: "cover"
   };
+  const appButton = {
+    textAlign: "center",
+    margin: "25px auto",
+    width: "25%",
+    minHeight: "200px",
+    backgroundColor: "#e0e0e0",
+    padding: "20px 0px 20px 0px",
+    position: "relative",
+    borderRadius: "5px"
+  };
+  const appButtonSubtext = {
+    marginBottom: "25px"
+  };
   return /*#__PURE__*/_react.default.createElement("div", {
     style: backgroundImageCSS
   }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "appButton"
+    style: appButton
   }, /*#__PURE__*/_react.default.createElement("h1", null, Header ? Header : "Place text here!"), /*#__PURE__*/_react.default.createElement("div", {
-    className: "appButtonSubtext"
+    style: appButtonSubtext
   }, subText), /*#__PURE__*/_react.default.createElement(_Button.default, {
     variant: "contained",
     color: "primary",

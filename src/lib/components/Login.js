@@ -17,11 +17,28 @@ const Login = ({ ImageUrl, onClick, Header, subText }) => {
     backgroundSize: "cover"
   }
 
+  const appButton = {
+    textAlign: "center",
+    margin:"25px auto",
+    width: "25%",
+    minHeight:"200px",
+    backgroundColor: "#e0e0e0",  
+    padding:"20px 0px 20px 0px",
+    position:"relative",
+    borderRadius: "5px"
+  }
+
+  const appButtonSubtext = {
+    marginBottom: "25px"
+  }
+
+
+
   return (
     <div style={backgroundImageCSS}>
-      <div className="appButton">
+      <div style={appButton}>
         <h1>{Header ? Header : "Place text here!"}</h1>
-        <div className="appButtonSubtext">{subText}</div>
+        <div style={appButtonSubtext}>{subText}</div>
         <Button variant="contained" color="primary" startIcon={<GamesIcon />} onClick={onClick}>
           Login with google
         </Button>
