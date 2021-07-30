@@ -1,9 +1,10 @@
+import React from 'react'
 import Button from "@material-ui/core/Button"
 import GamesIcon from "@material-ui/icons/Games"
 
 const Login = ({ ImageUrl, onClick, Header, subText }) => {
   const templateImage =
-    "https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg"
+    "https://source.unsplash.com/collection/496416"
 
   const backgroundImageCSS = {
     position: "absolute",

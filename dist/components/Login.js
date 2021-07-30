@@ -5,6 +5,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
+var _react = _interopRequireDefault(require("react"));
+
 var _Button = _interopRequireDefault(require("@material-ui/core/Button"));
 
 var _Games = _interopRequireDefault(require("@material-ui/icons/Games"));
@@ -27,16 +29,16 @@ const Login = (_ref) => {
     WebkitBackgroundSize: "cover",
     backgroundSize: "cover"
   };
-  return /*#__PURE__*/React.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement("div", {
     style: backgroundImageCSS
-  }, /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/_react.default.createElement("div", {
     className: "appButton"
-  }, /*#__PURE__*/React.createElement("h1", null, Header ? Header : "Place text here!"), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/_react.default.createElement("h1", null, Header ? Header : "Place text here!"), /*#__PURE__*/_react.default.createElement("div", {
     className: "appButtonSubtext"
-  }, subText), /*#__PURE__*/React.createElement(_Button.default, {
+  }, subText), /*#__PURE__*/_react.default.createElement(_Button.default, {
     variant: "contained",
     color: "primary",
-    startIcon: /*#__PURE__*/React.createElement(_Games.default, null),
+    startIcon: /*#__PURE__*/_react.default.createElement(_Games.default, null),
     onClick: onClick
   }, "Login with google")));
 };
