@@ -4,7 +4,7 @@ import GamesIcon from "@material-ui/icons/Games"
 
 const Login = ({ ImageUrl, onClick, Header, subText }) => {
   const templateImage =
-    "https://source.unsplash.com/collection/496416"
+    "https://picsum.photos/2048/1080"
 
   const backgroundImageCSS = {
     position: "absolute",
@@ -20,7 +20,8 @@ const Login = ({ ImageUrl, onClick, Header, subText }) => {
   const appButton = {
     textAlign: "center",
     margin:"25px auto",
-    width: "25%",
+    minWidth: "300px",
+    maxWidth: "500px",
     minHeight:"200px",
     backgroundColor: "#e0e0e0",  
     padding:"20px 0px 20px 0px",

@@ -20,7 +20,7 @@ const Login = (_ref) => {
     Header,
     subText
   } = _ref;
-  const templateImage = "https://source.unsplash.com/collection/496416";
+  const templateImage = "https://picsum.photos/2048/1080";
   const backgroundImageCSS = {
     position: "absolute",
     width: "100%",
@@ -32,7 +32,8 @@ const Login = (_ref) => {
   const appButton = {
     textAlign: "center",
     margin: "25px auto",
-    width: "25%",
+    minWidth: "300px",
+    maxWidth: "500px",
     minHeight: "200px",
     backgroundColor: "#e0e0e0",
     padding: "20px 0px 20px 0px",
