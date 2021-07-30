@@ -1,8 +1,30 @@
 {
-  "name": "doritosxl-login",
-  "version": "0.1.0",
-  "private": true,
+  "name": "doritosxl-login-page",
+  "description": "Login page with a pre written design",
+  "author": "DoritosXL",
+  "keywords": [
+    "react",
+    "components",
+    "ui",
+    "background-image"
+  ],
+  "version": "0.1.1",
+  "private": false,
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DoritosXL/Login-screen"
+  },
   "dependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/preset-env": "^7.14.8",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -13,7 +35,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
