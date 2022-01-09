@@ -18,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/DoritosXL/Login-screen"
+    "url": "https://github.com/DoritosXL/Login-page"
   },
   "peerDependencies": {
     "react": ">=17.0.2"
